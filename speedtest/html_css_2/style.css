@@ -1,0 +1,11 @@
+/* Your code here */
+
+
+img {
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+
+img:hover {
+    filter: none;
+}

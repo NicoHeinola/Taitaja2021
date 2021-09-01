@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Sivu</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="../images/opinsys-logo.png" alt="logo">
+        <div class="links">
+            <div class="link link-container">
+                <p class="text">Organisaatio</p>
+                <div class="items">
+                    <a>Otsikko 1</a>
+                    <a>Otsikko 2</a>
+                    <a>Otsikko 3</a>
+                </div>
+            </div>
+            <div class="link link-container">
+                <p class="text">Koulut</p>
+                <div class="items">
+                    <a>Kettula</a>
+                    <a>Pupula</a>
+                    <a>Karhula</a>
+                </div>
+            </div>
+            <input class="link" type="text" placeholder="Pikahaku">
+        </div>
+        <div class="sub-nav">
+            <div class="links">
+                <div class="link link-container">
+                    <p class="text">Laitteet</p>
+                    <div class="items">
+                        <a>Alaotsikko</a>
+                    </div>
+                </div>
+                <a class="link">Käyttäjät</a>
+                <a class="link">KOULU</a>
+            </div>
+        </div>
+    </nav>
+    <div class="section device-section">
+        <div class="devices">
+            <div class="table-div">
+                <table class="table-1">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Verkkonimi</th>
+                            <th>Tyyppi</th>
+                            <th>Valmistaja</th>
+                            <th>Malli</th>
+                            <th>Nykyinen työpöytäkuva</th>
+                            <th>Toiminnot</th>
+                        </tr>
+                        <tr>
+                            <td class="checkbox" data-row-key="16"><input type="checkbox"></td>
+                            <td data-title="Verkkonimi" class="selectedColumn"><a
+                                    href="https://test.domain.fi/devices/358799/devices/365972">kettula-paate-034</a>
+                            </td>
+                            <td data-title="Tyyppi">Tehopääte</td>
+                            <td data-title="Valmistaja">Hewlett-Packard</td>
+                            <td data-title="Malli">HP EliteBook 840 G1</td>
+                            <td data-title="Nykyinen työpöytäkuva">opinsys-os-opinsys-buster-2019-10-24-132605-amd64.img
+                            </td>
+                            <td><a class="btn"
+                                    href="https://test.domain.fi/devices/358799/devices/365972/edit">Muokkaa</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="checkbox" data-row-key="12"><input type="checkbox"></td>
+                            <td data-title="Verkkonimi" class="selectedColumn"><a
+                                    href="https://test.domain.fi/devices/358799/devices/358801">kettula-kan-057</a></td>
+                            <td data-title="Tyyppi">Kannettava</td>
+                            <td data-title="Valmistaja">SAMSUNG ELECTRONICS CO., LTD.</td>
+                            <td data-title="Malli">900X3C/900X3D/900X3E/900X4C/900X4D</td>
+                            <td data-title="Nykyinen työpöytäkuva">opinsys-os-opinsys-buster-2021-03-24-123005-amd64.img
+                            </td>
+                            <td><a class="btn" href="https://test.domain.fi/devices/358799/devices/358801/edit">
+                                    Muokkaa</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="side-bar">
+            <div class="flex row">
+                <select name="device_type" id="device_type" style="margin-right: 20px;">
+                    <option hidden selected value="">Lisää uusi laite</option>
+                    <option value="other">Muu</option>
+                    <option value="printer">Tulostin</option>
+                    <option value="projector">Projektori</option>
+                    <option value="switch">Kytkin (verkko)</option>
+                    <option value="webcam">Web-kamera</option>
+                </select>
+                <button type="button" class="button">Lisää</button>
+            </div>
+            <select style="width: 100%;">
+                <option selected hidden value="">Suodata</option>
+                <option value="1">Kaikki kannettavat koneet</option>
+                <option value="2">Koneet, joita ei ole käynnistetty vuonna 2021</option>
+                <option value="3">Koneet, joita ei ole käynnistetty vuonna 2020</option>
+            </select>
+        </div>
+    </div>
+    <footer class="dark-box">
+        <p>p. 014 4591624</p>
+        <p>Ylistönmäentie 31 B</p>
+        <p>40500 Jyväskylä</p>
+        <a>info@opinsys.fi</a>
+    </footer>
+</body>
+
+</html>
